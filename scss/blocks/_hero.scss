@@ -6,6 +6,7 @@
 
 .hero__inner {
     padding-top: 295px;
+
     background-image: url("../images/hero-bg-m.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -27,6 +28,7 @@
 .hero__text {
     margin-top: 0;
     margin-bottom: 0;
+    
     font-family: var(--main-title-font-family);
     font-weight: var(--main-bold-font-weight);
     font-size: 40px;

@@ -19,6 +19,7 @@
 .site-article__text {
     margin-top: 0;
     margin-bottom: 0;
+
     font-family: var(--main-title-font-family);
     font-weight: var(--main-bold-font-weight);
     font-size: 40px;
@@ -34,6 +35,7 @@
     height: 1px;
     margin-right: 32px;
     margin-left: 32px;
+    
     background-color: var(--main-text-color);
     opacity: 0.15;
 }

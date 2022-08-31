@@ -5,6 +5,7 @@
     flex-direction: column;
     padding-top: 25px;
     padding-bottom: 32px;
+
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
@@ -12,6 +13,7 @@
 .contact-hero__text {
     margin-top: 0;
     margin-bottom: 24px;
+
     font-family: var(--main-title-font-family);
     font-weight: var(--main-bold-font-weight);
     font-size: 40px;
@@ -22,6 +24,7 @@
 .contact-hero__desc {
     margin-top: 0;
     margin-bottom: 24px;
+
     font-size: 15px;
     line-height: 30px;
     color: var(--main-text-color);
@@ -71,10 +74,10 @@
 
 @include mobile-first(921px){
     .contact-hero__inner {
-        padding-top: 48px;
-        padding-bottom: 48px;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     .contact-hero__text {

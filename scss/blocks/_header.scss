@@ -29,6 +29,7 @@
     max-width: 223px;
     width: 100%;
     padding: 40px 15px;
+
     background-color: var(--main-text-color);
     overflow-x: hidden;
 }
@@ -66,6 +67,7 @@
 .site-header__burger {
     width: 24px;
     height: 13px;
+    
     background-color: transparent;
     background-image: url("../images/burger.svg");
     background-repeat: no-repeat;
