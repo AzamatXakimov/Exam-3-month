@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimalist-portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="site-body">
+
+    <!-- Header start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+                <a class="logo" href="./index.html">
+                    <img class="logo__img" src="./images/logo.svg" alt="site logo">
+                </a>
+
+                <nav class="site-header__nav">
+                    <ul class="site-header__list">
+                        <li class="site-header__item">
+                            <a class="site-header__link site-header__link--active" href="./index.html">
+                                home
+                            </a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="./portfolio.html">
+                                portfolio
+                            </a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="./contact.html">
+                                contact me
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="site-header__burger js-open-navbar" type="button"></button>
+            </div>
+        </div>
+    </header>
+    <!-- Header finish -->
+
+    <!-- Main start -->
+    <main class="site-main">
+        <!-- Hero section start  -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__box">
+                        <div class="hero__textbox">
+                            <h1 class="hero__text">
+                                Hey, I’m Alex Spencer and I love building beautiful websites
+                            </h1>
+                        </div>
+                        <a class="hero__link" href="#about_me">
+                            about me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section finish  -->
+        
+        <!-- About me section start  -->
+        <section class="about-me" id="about_me">
+            <div class="container">
+                <div class="about-me__inner">
+                    <picture>
+                        <source media="(min-width: 930px)" srcset="./images/men.webp 1x , ./images/men@2x.webp 2x">
+                        <source media="(min-width: 930px)" srcset="./images/men.jpg 1x , ./images/men@2x.jpg 2x">
+
+                        <source media="(min-width: 709px)" srcset="./images/men-t.webp 1x , ./images/men-t@2x.webp 2x">
+                        <source media="(min-width: 709px)" srcset="./images/men-t.jpg 1x , ./images/men-t@2x.jpg 2x">
+
+                        <source type="image/webp" srcset="./images/men-m.webp 1x , ./images/men-m@2x.webp 2x">
+                        <img class="about-me__img" src="./images/men-m.jpg" 
+                        width="311"
+                        height="346"
+                        srcset="./images/men-m.jpg 1x , ./images/men-m@2x.jpg 2x"
+                        alt="my photo">
+                    </picture>
+
+                    <div class="about-me__infobox">
+                        <h2 class="about-me__text">
+                            About Me
+                        </h2>
+                        <p class="about-me__desc">
+                            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+                        </p>
+
+                        <a class="about-me__link" href="./portfolio.html">
+                            Go to portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About me section finish  -->
+
+        <!-- Article section start  -->
+        <article class="site-article">
+            <div class="container">
+                <div class="site-article__inner">
+                    <div class="site-article__textbox">
+                        <h2 class="site-article__text">
+                            Interested in doing a project together?
+                        </h2>
+                    </div>
+                    <span class="site-article__line"></span>
+                    <a class="site-article__link" href="./contact.html">
+                        contact me
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!-- Article section finish  -->
+    </main>
+    <!-- Main finish  -->
+
+    <!-- Footer start -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__inner">
+                <a class="logo logo--white" href="./index.html">
+                    <svg width="61" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M31.347 26.122 15.673 0 0 26.122h31.347ZM60.082 5.878 44.408 32 28.735 5.878h31.347Z" fill="currentColor"/></svg>
+                </a>
+
+                <nav class="site-footer__nav">
+                    <ul class="site-footer__navlist">
+                        <li class="site-footer__navitem">
+                            <a class="site-footer__navlink" href="./index.html">
+                                home
+                            </a>
+                        </li>
+                        <li class="site-footer__navitem">
+                            <a class="site-footer__navlink" href="./portfolio.html">
+                                portfolio
+                            </a>
+                        </li>
+                        <li class="site-footer__navitem">
+                            <a class="site-footer__navlink" href="./contact.html">
+                                contact me
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="networks">
+                    <li class="networks__item">
+                        <a class="networks__link" href="#" target="blank">
+                            <img class="networks__img" src="./images/github.svg" alt="github networks">
+                        </a>
+                    </li>
+                    <li class="networks__item">
+                        <a class="networks__link" href="#" target="blank">
+                            <img class="networks__img" src="./images/twitter.svg" alt="twitter networks">
+                        </a>
+                    </li>
+                    <li class="networks__item">
+                        <a class="networks__link" href="#" target="blank">
+                            <img class="networks__img" src="./images/in.svg" alt="linkedin logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer finish -->
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

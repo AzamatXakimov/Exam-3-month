@@ -1,0 +1,128 @@
+/* HERO */
+
+.hero {
+    padding-bottom: 96px;
+}
+
+.hero__inner {
+    padding-top: 295px;
+    background-image: url("../images/hero-bg-m.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.hero__box{
+    max-width: 514px;
+    width: 100%;
+    background-color: var(--main-white-text-color);
+}
+
+.hero__textbox {
+    max-width: 458px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--main-title-font-family);
+    font-weight: var(--main-bold-font-weight);
+    font-size: 40px;
+    line-height: 42px;
+    color: var(--main-text-color);
+}
+
+.hero__link {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    width: 100%;
+
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-white-text-color);
+    background-color: var(--main-link-bg-color);
+    transition: background-color 0.3s ease;
+
+    &::before{
+        margin-right: 38px;
+        @include psevdoelements(48px, 48px);
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url("../images/btn-arrow.svg");
+        background-repeat: no-repeat;   
+        background-position: center;
+    }
+
+    &:hover{
+        background-color: var(--main-hover-color);
+
+        &::before{
+            background-image: url("../images/white-arrow.svg");
+        }
+    }
+}
+
+@include bgRetinaImages{
+    .hero__inner{
+        background-image: url("../images/hero-bg-m@2x.jpg");
+    }
+}
+
+@include mobile-first(600px){
+    .hero__inner {
+        padding-top: 322px;
+        background-image: url("../images/hero-bg-t.jpg");
+        background-position: center;
+    }
+    
+    .hero__box{
+        padding-top: 56px;
+    }
+    
+    .hero__textbox {
+        margin-bottom: 48px;
+    }
+    
+    @include bgRetinaImages{
+        .hero__inner{
+            background-image: url("../images/hero-bg-t@2x.jpg");
+        }
+    }
+}
+
+@include mobile-first(768px){
+    .hero {
+        padding-bottom: 150px;
+    }
+
+    .hero__inner {
+        padding-top: 243px;
+        background-image: url("../images/hero-bg.jpg");
+    }
+
+    .hero__box{
+        max-width: 445px;
+    }
+
+    .hero__textbox {
+        max-width: 393px;
+        margin-bottom: 53px;
+    }
+
+    .hero__text {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    @include bgRetinaImages{
+        .hero__inner{
+            background-image: url("../images/hero-bg@2x.jpg");
+        }
+    }
+}

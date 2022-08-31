@@ -1,0 +1,114 @@
+/* ABOUT ME */
+
+.about-me{
+    padding-bottom: 115px;
+}
+
+.about-me__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1015px;
+    width: 100%;
+}
+
+.about-me__img {
+    max-width: 311px;
+    width: 100%;
+    height: auto;
+}
+
+.about-me__infobox {
+    width: 100%;
+
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 51px;
+    border-top: 1px solid  rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid  rgba(51, 50, 61, 0.15);
+}
+
+.about-me__text {
+    margin-top: 0;
+    margin-bottom: 28px;
+
+    font-family: var(--main-title-font-family);
+    font-weight: var(--main-bold-font-weight);
+    font-size: 40px;
+    line-height: 42px;
+    color: var(--main-text-color);
+}
+
+.about-me__desc {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--main-text-color);
+    opacity: 0.8;
+}
+
+.about-me__link {
+    display: inline-block;
+    max-width: 202px;
+    width: 100%;
+    padding: 17px 15px;
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color);
+    
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover{
+        color: var(--main-white-text-color);
+        background-color: var(--main-text-color);
+    }
+}
+
+@include mobile-first(709px){
+    .about-me{
+        padding-bottom: 96px;
+    }    
+
+    .about-me__inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .about-me__img {
+        max-width: 281px;
+        // width: 281px;
+        height: 600px;
+    }
+    
+    .about-me__infobox {
+        max-width: 350px;
+        margin-top: 0;
+        margin-left: 15px;
+        padding-top: 48px;
+        padding-bottom: 46px;
+    }
+}
+
+@include  mobile-first(930px){
+    .about-me{
+        padding-bottom: 150px;
+    } 
+
+    .about-me__img {
+        max-width: 540px;
+        height: 600px;
+    }
+
+    .about-me__infobox {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+}

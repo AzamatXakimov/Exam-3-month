@@ -1,0 +1,131 @@
+/* CONTACT ME */
+
+.contact-me {
+    padding-top: 32px;
+    padding-bottom: 80px;
+}
+
+.contact-me__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me__text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: var(--main-title-font-family);
+    font-weight: var(--main-bold-font-weight);
+    font-size: 40px;
+    line-height: 42px;
+    color: var(--main-text-color);
+}
+
+.contact-me__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: var(--main-bold-font-weight);
+    font-size: 13px;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.8)
+}
+
+.contact-me__inputzone {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding: 9px 16px;
+    font-size: 13px;
+    line-height: 30px;    
+    color: var(--main-text-color);
+    background-color: rgba(51, 50, 61, 0.1);
+    border: none;
+    transition: outline-color 0.3s ease;
+    
+    &::placeholder{
+        font-family: var(--main-font-family);
+        font-weight: var(--main-font-weight);
+        font-size: 13px;
+        line-height: 30px;
+        color: var(--main-text-color);
+        opacity: 0.4;
+    }
+
+    &:focus{
+        outline: 1px solid var(--main-hover-color);
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid{
+        margin-bottom: 4px;
+        outline: 1px solid var(--main-valid-color);
+    }
+}
+
+.contact-me__inputzone:not(:focus):not(:placeholder-shown):invalid ~ .contact-me__invalidtext {
+    display: block;
+}
+
+.contact-me__invalidtext {
+    display: none;
+    font-style: italic;
+    font-weight: var(--main-bold-font-weight);
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--main-valid-color);
+}
+
+.contact-me__inputzone--textarea {
+    height: 96px;
+    resize: none;
+}
+
+.contact-me__btn {
+    max-width: 200px;
+    width: 100%;
+    padding: 17px 15px;
+
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    color: var(--main-white-text-color);
+    background-color: var(--main-link-bg-color);
+    border: none;
+
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: var(--main-hover-color);
+    }
+}
+
+@include mobile-first(600px){
+    .contact-me {
+        padding-bottom: 96px;
+    }
+}
+
+@include mobile-first(900px){
+    .contact-me {
+        padding-top: 47px;
+        padding-bottom: 109px;
+    }
+    
+    .contact-me__inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .contact-me__text {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    
+    .contact-me__form {
+        max-width: 635px;
+        width: 100%;
+    }
+}

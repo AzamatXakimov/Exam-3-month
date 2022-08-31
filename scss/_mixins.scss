@@ -1,0 +1,45 @@
+// MIXINS 
+
+@mixin mobile-first($min){
+    @media only screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin min-max($min, $max){
+    @media only screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin desktop-first($max){
+    @media only screen and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin list-unstyle($mt, $mb, $pl){
+    margin-top: $mt;
+    margin-bottom: $mb;
+    padding-left: $pl;
+    list-style: none;
+}
+
+@mixin psevdoelements($width, $height){
+    display: inline-block;
+    width: $width;
+    height: $height;
+    content: "";
+}
+
+@mixin bgRetinaImages{
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        @content;
+    }
+}
